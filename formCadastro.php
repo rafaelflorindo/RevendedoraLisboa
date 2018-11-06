@@ -30,6 +30,7 @@
 		<th>Modelo</th>
 		<th>Ano</th>
 		<th>Valor</th>	
+		<th>Eventos</th>	
 	<?php
 		foreach($arrayVeiculo as $valor){
 	?>
@@ -39,12 +40,16 @@
 		<td><?php echo $valor["modelo"];?></td>
 		<td><?php echo $valor["ano"];?></td>
 		<td><?php echo $valor["valor"];?></td>
+		<td><a href = "formAlterar.php">ALTERAR</a> - 
+			<a href = excluir.php?idVeiculo=<?php echo $valor["idVeiculo"];?>
+					>EXCLUIR</a>
+		</td>
 	</tr>
-	<?php
+		<?php
 	}
 	?>
 	</table>
-	Foram Encontrados <?php echo $numeroRegistro; ?> registros
+	Foram Encontrados <?php echo $numeroRegistro; ?> registros.
 
 <?php
 }
