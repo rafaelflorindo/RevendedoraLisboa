@@ -1,3 +1,7 @@
+
+<!--github.com/rafaelflorindo/RevendedoraLisboa
+
+-->
 <?php
 	$local = "localhost";
 	$user = "root";

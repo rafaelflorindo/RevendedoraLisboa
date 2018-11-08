@@ -40,9 +40,13 @@
 		<td><?php echo $valor["modelo"];?></td>
 		<td><?php echo $valor["ano"];?></td>
 		<td><?php echo $valor["valor"];?></td>
-		<td><a href = "formAlterar.php">ALTERAR</a> - 
+		<td><a href = formAlterar.php?idVeiculo=<?php echo $valor["idVeiculo"];?>
+					>ALTERAR
+			</a>- 		
+			
 			<a href = excluir.php?idVeiculo=<?php echo $valor["idVeiculo"];?>
-					>EXCLUIR</a>
+					>EXCLUIR
+			</a>
 		</td>
 	</tr>
 		<?php
